@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chapter 1 – The World Before Sovereigns</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="chapter">
+
+  <!-- TITLE -->
+  <div class="panel">
+    <div class="title">CHAPTER 1</div>
+    <div class="subtitle">The World Before Sovereigns</div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 1 -->
+  <div class="panel">
+    <img src="../images/arc-1/ch01_p01.png" alt="The broken world before the Sovereigns">
+  </div>
+
+  <div class="panel text">
+    Before the Sovereigns were named,<br>
+    before crowns were forged from will and power,<br>
+    the world already carried scars.
+  </div>
+
+  <div class="panel text">
+    Mountains cracked without war.<br>
+    Oceans shifted without command.<br>
+    The sky pressed low, heavy with something unfinished.
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 2 -->
+  <div class="panel">
+    <img src="../images/arc-1/ch01_p02.png" alt="Ancient beings exchanging uncontrolled power">
+  </div>
+
+  <div class="panel text">
+    Power existed long before rulers did.
+  </div>
+
+  <div class="panel text">
+    It flowed freely—<br>
+    wild, unmeasured, unanswered.
+  </div>
+
+  <div class="panel text">
+    Those who touched it were changed.<br>
+    Those who chased it were broken.
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 3 -->
+  <div class="panel">
+    <img src="../images/arc-1/ch01_p03.png" alt="A vast black presence observing the birth of power">
+  </div>
+
+  <div class="panel text">
+    In the beginning, there were no kings.<br>
+    No queens.<br>
+    No thrones.
+  </div>
+
+  <div class="panel text">
+    Only beings who learned—too late—<br>
+    that power does not ask who deserves it.
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 4 -->
+  <div class="panel">
+    <img src="../images/arc-1/ch01_p04.png" alt="The first uncontrolled collision of power">
+  </div>
+
+  <div class="panel text">
+    The first conflicts were not battles.
+  </div>
+
+  <div class="panel text">
+    They were accidents.
+  </div>
+
+  <div class="panel text">
+    A thought that burned too bright.<br>
+    A hand that reached too far.<br>
+    A will that refused to yield.
+  </div>
+
+  <div class="panel text">
+    Land tore open.<br>
+    Time bent.<br>
+    Silence learned how to scream.
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 5 -->
+  <div class="panel">
+    <img src="../images/arc-1/ch01_p05.png" alt="The silent aftermath of the first destruction">
+  </div>
+
+  <div class="panel text">
+    When the force finally faded,
+  </div>
+
+  <div class="panel text">
+    nothing rushed to replace it.
+  </div>
+
+  <div class="panel text">
+    The world did not heal.
+  </div>
+
+  <div class="panel text">
+    It simply remained—<br>
+    broken, quieter than before.
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 6 -->
+  <div class="panel">
+    <img src="../images/arc-1/ch01_p06.png" alt="The first step toward order">
+  </div>
+
+  <div class="panel text">
+    Chaos demanded an answer.
+  </div>
+
+  <div class="panel text">
+    And the world did not wait for one to be given.
+  </div>
+
+  <div class="panel text">
+    Someone stepped forward.
+  </div>
+
+  <div class="panel text">
+    Not to save the world—
+  </div>
+
+  <div class="panel text">
+    but to control it.
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="panel text">
+    This was not the beginning of peace.
+  </div>
+
+  <div class="panel text">
+    It was the beginning of order.
+  </div>
+
+  <div class="panel text">
+    And every order demands a price.
+  </div>
+
+</div>
+<<div class="nav">
+    <a href="#">⬅ Previous</a>
+    <a href="../index.html">🏠 Home</a>
+    <a href="chapter-2.html">Next ➡</a>
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const panels = document.querySelectorAll('.panel');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            }
+        });
+    }, { threshold: 0.15 });
+
+    panels.forEach(panel => {
+        observer.observe(panel);
+    });
+
+});
+</script>
+</body>
+</html>

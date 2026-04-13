@@ -1,0 +1,231 @@
+/* =========================
+   GLOBAL
+========================= */
+body {
+    margin: 0;
+    background: #000;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* =========================
+   INTRO (SAFE)
+========================= */
+#intro {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.intro-text {
+    position: absolute;
+    font-size: 24px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.intro-text.active {
+    opacity: 1;
+}
+
+/* =========================
+   MUSIC BUTTON
+========================= */
+#music-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background: rgba(0,0,0,0.6);
+    border: 1px solid #555;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* =========================
+   HERO (HOMEPAGE)
+========================= */
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('images/arc-1/ch01_p01.png') center 20% / cover no-repeat;
+}
+
+.hero-overlay {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hero-title {
+    font-size: 48px;
+    animation: glow 3s infinite alternate;
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 10px white; }
+    to { text-shadow: 0 0 30px white; }
+}
+
+.start-btn {
+    padding: 10px 20px;
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+}
+
+/* =========================
+   HOMEPAGE CONTENT
+========================= */
+.intro-section {
+    text-align: center;
+    padding: 50px;
+    color: #bbb;
+}
+
+.chapters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.chapters a {
+    padding: 10px 15px;
+    border: 1px solid #555;
+    color: white;
+    text-decoration: none;
+}
+
+/* =========================
+   CHAPTER PAGE
+========================= */
+.chapter {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+.chapter h1 {
+    text-align: center;
+}
+
+.chapter h2 {
+    text-align: center;
+    color: #aaa;
+    margin-bottom: 40px;
+}
+
+/* =========================
+   PANELS (SAFE ANIMATION)
+========================= */
+.panel {
+    margin-bottom: 40px;
+
+    opacity: 1; /* SAFE DEFAULT */
+    transform: translateY(0) scale(1);
+}
+
+/* ONLY hide when JS is active */
+.js-enabled .panel {
+    opacity: 0;
+    transform: translateY(60px) scale(0.95);
+    transition: all 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.panel.show {
+    opacity: 1 !important;
+    transform: translateY(0) scale(1) !important;
+    animation: panelBounce 0.6s ease;
+}
+
+/* bounce */
+@keyframes panelBounce {
+    0%   { transform: translateY(60px) scale(0.95); }
+    60%  { transform: translateY(-6px) scale(1.02); }
+    100% { transform: translateY(0) scale(1); }
+}
+
+/* =========================
+   IMAGE
+========================= */
+.panel img {
+    width: 100%;
+    display: block;
+    border-radius: 6px;
+    margin-bottom: 12px;
+}
+
+/* =========================
+   TEXT (FIXED UI)
+========================= */
+.text,
+.caption,
+.dialogue {
+    max-width: 720px;
+    margin: 0 auto;
+
+    padding: 16px;
+    border-radius: 8px;
+
+    background: linear-gradient(180deg, #111, #0a0a0a);
+    border: 1px solid #222;
+
+    text-align: center;
+    line-height: 1.7;
+
+    box-shadow: 0 0 15px rgba(255,255,255,0.05);
+}
+
+.panel .text,
+.panel .dialogue {
+    margin-top: 12px;
+}
+
+/* =========================
+   NAV
+========================= */
+.nav {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.nav a {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #555;
+    color: white;
+    text-decoration: none;
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 600px) {
+    .hero-title {
+        font-size: 30px;
+    }
+
+    .text {
+        font-size: 15px;
+    }
+}

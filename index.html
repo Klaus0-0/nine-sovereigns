@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>The Nine Sovereigns</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- INTRO SCREEN -->
+<div id="intro">
+    <div class="intro-text active">In a world where power was divided…</div>
+    <div class="intro-text">Eight rose to claim their dominion…</div>
+    <div class="intro-text">But one was never meant to exist…</div>
+</div>
+
+<!-- MUSIC BUTTON -->
+<button id="music-btn">🔊</button>
+
+<audio id="bg-music" loop>
+    <source src="audio/theme.mp3" type="audio/mpeg">
+</audio>
+
+<!-- HERO SECTION -->
+<section class="hero">
+
+    <div class="hero-bg"></div>
+
+    <div class="hero-overlay">
+        <h1 class="hero-title">THE NINE SOVEREIGNS</h1>
+
+        <p class="hero-sub">
+            Eight were chosen.<br>
+            One was never meant to exist.
+        </p>
+
+        <a href="chapters/chapter-1.html" class="start-btn">Start Reading</a>
+    </div>
+
+</section>
+
+<!-- STORY INTRO -->
+<section class="intro-section">
+    <p>
+        Power was divided to save the world.<br>
+        But division was never meant to last.<br><br>
+
+        Now the balance fractures.<br>
+        And something beyond it… is watching.
+    </p>
+</section>
+
+<!-- CHAPTERS -->
+<section class="chapters-section">
+    <h2>Chapters</h2>
+
+    <div class="chapters">
+        <a href="chapters/chapter-1.html">Chapter 1</a>
+        <a href="chapters/chapter-2.html">Chapter 2</a>
+        <a href="chapters/chapter-3.html">Chapter 3</a>
+        <a href="chapters/chapter-4.html">Chapter 4</a>
+        <a href="chapters/chapter-5.html">Chapter 5</a>
+        <a href="chapters/chapter-6.html">Chapter 6</a>
+        <a href="chapters/chapter-7.html">Chapter 7</a>
+        <a href="chapters/chapter-8.html">Chapter 8</a>
+        <a href="chapters/chapter-9.html">Chapter 9</a>
+        <a href="chapters/chapter-10.html">Chapter 10</a>
+        <a href="chapters/chapter-11.html">Chapter 11</a>
+        <a href="chapters/chapter-12.html">Chapter 12</a>
+        <a href="chapters/chapter-13.html">Chapter 13</a>
+        <a href="chapters/chapter-14.html">Chapter 14</a>
+        <a href="chapters/chapter-15.html">Chapter 15</a>
+        <a href="chapters/chapter-16.html">Chapter 16</a>
+        <a href="chapters/chapter-17.html">Chapter 17</a>
+        <a href="chapters/chapter-18.html">Chapter 18</a>
+        <a href="chapters/chapter-19.html">Chapter 19</a>
+        <a href="chapters/chapter-20.html">Chapter 20</a>
+        <a href="chapters/chapter-21.html">Chapter 21</a>
+        <a href="chapters/chapter-22.html">Chapter 22</a>
+        <a href="chapters/chapter-23.html">Chapter 23</a>
+    </div>
+</section>
+
+<footer>
+    © 2026 The Nine Sovereigns
+</footer>
+
+<!-- SCRIPT -->
+<script>
+window.addEventListener("load", () => {
+
+    // INTRO TEXT SEQUENCE
+    const texts = document.querySelectorAll(".intro-text");
+    let index = 0;
+
+    function showNextText() {
+        texts.forEach(t => t.classList.remove("active"));
+
+        if (index < texts.length) {
+            texts[index].classList.add("active");
+            index++;
+            setTimeout(showNextText, 2000);
+        } else {
+            const intro = document.getElementById("intro");
+            intro.style.opacity = "0";
+            setTimeout(() => {
+                intro.style.display = "none";
+            }, 1000);
+        }
+    }
+
+    setTimeout(showNextText, 1000);
+
+    // MUSIC CONTROL
+    const music = document.getElementById("bg-music");
+    const btn = document.getElementById("music-btn");
+
+    let playing = false;
+
+    btn.addEventListener("click", () => {
+        if (!playing) {
+            music.volume = 0.4;
+            music.play();
+            btn.innerText = "🔇";
+            playing = true;
+        } else {
+            music.pause();
+            btn.innerText = "🔊";
+            playing = false;
+        }
+    });
+
+    // PARALLAX
+    window.addEventListener("scroll", function () {
+        const bg = document.querySelector(".hero-bg");
+        let offset = window.scrollY;
+        bg.style.transform = "translateY(" + offset * 0.3 + "px)";
+    });
+
+});
+</script>
+
+</body>
+</html>

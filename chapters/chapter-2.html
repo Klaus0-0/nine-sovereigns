@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Chapter 2 — The First Choice</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<div class="chapter">
+
+  <h1 class="chapter-title">CHAPTER 2</h1>
+  <h2 class="chapter-subtitle">The First Choice</h2>
+
+  <!-- Panel 1 -->
+  <div class="panel">
+    <img src="../images/arc-1/ch02_p01.png" alt="After Order">
+    <div class="text">
+      Order returned to the world.<br>
+      But peace did not.
+    </p>
+  </div>
+
+  <!-- Panel 2 -->
+  <div class="panel">
+    <img src="../images/arc-1/ch02_p02.png" alt="The Survivors">
+    <div class="text">
+      Those who lived gathered in silence,<br>
+      unsure of what came next.
+    </p>
+  </div>
+
+  <!-- Panel 3 -->
+  <div class="panel">
+    <img src="../images/arc-1/ch02_p03.png" alt="The One Who Feels It">
+    <div class="text">
+      One among them felt the imbalance.<br>
+      Not fear. Responsibility.
+    </p>
+  </div>
+
+  <!-- Panel 4 -->
+  <div class="panel">
+    <img src="../images/arc-1/ch02_p04.png" alt="The First Question">
+    <div class="text">
+      “Why did it stop?”<br><br>
+      “Because it had to.”
+    </p>
+  </div>
+
+  <!-- Panel 5 -->
+  <div class="panel">
+    <img src="../images/arc-1/ch02_p05.png" alt="The First Lending">
+    <div class="text">
+      The first gift was not given to save the world—<br>
+      but to let one person stand again.
+    </p>
+  </div>
+
+  <!-- Panel 6 -->
+  <div class="panel">
+    <img src="../images/arc-1/ch02_p06.png" alt="The Cost">
+    <div class="text">
+      He did not feel pain.<br><br>
+      He did not feel relief.<br><br>
+      He felt… less.
+    </p>
+  </div>
+
+  <!-- Panel 7 -->
+  <div class="panel">
+    <img src="../images/arc-1/ch02_p07.png" alt="They Notice">
+    <div class="text">
+      His choice did not go unseen.
+    </p>
+  </div>
+
+  <!-- Panel 8 -->
+  <div class="panel">
+    <img src="../images/arc-1/ch02_p08.png" alt="What Is No Longer There">
+    <div class="text">
+      He searched for relief.<br><br>
+      Nothing answered.
+    </p>
+  </div>
+
+  <!-- Panel 9 -->
+  <div class="panel">
+    <img src="../images/arc-1/ch02_p09.png" alt="The Path He Chooses">
+    <div class="text">
+      The world would stand.<br><br>
+      Whatever it cost him.
+    </p>
+  </div>
+
+</div>
+<div class="nav">
+    <a href="chapter-1.html">⬅ Previous</a>
+    <a href="../index.html">🏠 Home</a>
+    <a href="chapter-3.html">Next ➡</a>
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const panels = document.querySelectorAll('.panel');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            }
+        });
+    }, { threshold: 0.15 });
+
+    panels.forEach(panel => {
+        observer.observe(panel);
+    });
+
+});
+</script>
+</body>
+</html>

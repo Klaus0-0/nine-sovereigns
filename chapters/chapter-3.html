@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Chapter 3 – The Gift of Sovereignty</title>
+
+<!-- USE GLOBAL CSS -->
+<link rel="stylesheet" href="../style.css">
+
+</head>
+
+<body class="js-enabled">
+
+<div class="chapter">
+
+    <h1>CHAPTER 3</h1>
+    <h2>The Gift of Sovereignty</h2>
+
+    <!-- PANEL 1 -->
+    <div class="panel">
+        <img src="../images/arc-1/ch03_p01.png" alt="The Witness Appears">
+        <div class="text">
+            From the silence between worlds,<br>
+            a figure emerged — neither god nor mortal.<br>
+            A witness to collapse.<br>
+            A bearer of fragments.
+        </div>
+    </div>
+
+    <!-- PANEL 2 -->
+    <div class="panel">
+        <img src="../images/arc-1/ch03_p02.png" alt="First King – Fire">
+        <div class="text">
+            To the first king, he offered flame —<br>
+            not as destruction,<br>
+            but as will made manifest.
+        </div>
+    </div>
+
+    <!-- PANEL 3 -->
+    <div class="panel">
+        <img src="../images/arc-1/ch03_p03.png" alt="Second King – Ice">
+        <div class="text">
+            To the second, he gave stillness.<br>
+            Ice that could halt even fate itself.
+        </div>
+    </div>
+
+    <!-- PANEL 4 -->
+    <div class="panel">
+        <img src="../images/arc-1/ch03_p04.png" alt="Third King – Storm">
+        <div class="text">
+            Lightning followed —<br>
+            speed beyond thought,<br>
+            judgment without mercy.
+        </div>
+    </div>
+
+    <!-- PANEL 5 -->
+    <div class="panel">
+        <img src="../images/arc-1/ch03_p05.png" alt="Fourth Sovereign – Earth">
+        <div class="text">
+            The earth answered next.<br>
+            Endurance. Weight.<br>
+            A crown that could never be set down.
+        </div>
+    </div>
+
+    <!-- PANEL 6 -->
+    <div class="panel">
+        <img src="../images/arc-1/ch03_p06.png" alt="Fifth Sovereign – Life">
+        <div class="text">
+            Life was not gentle.<br>
+            It demanded sacrifice —<br>
+            and she accepted it.
+        </div>
+    </div>
+
+    <!-- PANEL 7 -->
+    <div class="panel">
+        <img src="../images/arc-1/ch03_p07.png" alt="Sixth Sovereign – Arcane">
+        <div class="text">
+            Knowledge tore through flesh and soul alike.<br>
+            Awareness became pain.
+        </div>
+    </div>
+
+    <!-- PANEL 8 -->
+    <div class="panel">
+        <img src="../images/arc-1/ch03_p08.png" alt="Seventh Sovereign – Shadow">
+        <div class="text">
+            Shadow came last —<br>
+            not as evil,<br>
+            but as the truth light refuses to face.
+        </div>
+    </div>
+
+    <!-- PANEL 9 -->
+    <div class="panel">
+        <img src="../images/arc-1/ch03_p09.png" alt="The Eight Stand Crowned">
+        <div class="text">
+            Eight stood crowned.<br>
+            Eight bore fragments of another’s soul.<br>
+            And the witness… grew thinner with every breath.
+        </div>
+    </div>
+
+    <div class="text" style="text-align:center; opacity:0.6; margin-top:40px;">
+        ✦ TO BE CONTINUED ✦
+    </div>
+
+</div>
+
+<!-- NAVIGATION -->
+<div class="nav">
+    <a href="chapter-2.html">⬅ Previous</a>
+    <a href="../index.html">🏠 Home</a>
+    <a href="chapter-4.html">Next ➡</a>
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const panels = document.querySelectorAll('.panel');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            }
+        });
+    }, { threshold: 0.15 });
+
+    panels.forEach(panel => {
+        observer.observe(panel);
+    });
+
+});
+</script>
+</body>
+</html>
