@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Chapter 25 — Nihilus Awakens</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="js-enabled">
+<div class="chapter">
+
+  <h1>CHAPTER 25</h1>
+  <h2>Nihilus Awakens</h2>
+
+  <!-- PANEL 1 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch25_p01.png">
+    <div class="text">
+      It ended.<br><br>
+      Silence returned.<br><br>
+      The universe breathed again.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 2 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch25_p02.png">
+    <div class="text">
+      He did not move.<br><br>
+      No presence remained.<br><br>
+      Only absence.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 3 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch25_p03.png">
+    <div class="text">
+      Then—<br><br>
+      something shifted.<br><br>
+      Barely.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 4 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch25_p04.png">
+    <div class="text">
+      The Eight lowered their guard.<br><br>
+      Exhaustion replaced vigilance.<br><br>
+      Victory settled in.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 5 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch25_p05.png">
+    <div class="text">
+      Something felt wrong.<br><br>
+      Not danger.<br>
+      Not threat.<br><br>
+      Misalignment.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 6 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch25_p06.png">
+    <div class="text">
+      He rose.<br><br>
+      Not with force.<br>
+      Not with effort.<br><br>
+      Naturally.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 7 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch25_p07.png">
+    <div class="text">
+      His eyes opened.<br><br>
+      Not awakened—<br>
+      aware.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 8 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch25_p08.png">
+    <div class="text">
+      Reality bent.<br><br>
+      Not broken.<br><br>
+      Corrected.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 9 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch25_p09.png">
+    <div class="text">
+      They stepped back.<br><br>
+      Understanding returned—<br>
+      too late.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 10 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch25_p10.png">
+    <div class="text">
+      Nihilus stood.<br><br>
+      Unchanged.<br><br>
+      Untouched.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 11 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch25_p11.png">
+    <div class="text">
+      This was not his fall.<br><br>
+      This was transition.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 12 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch25_p12.png">
+    <div class="text">
+      The pressure returned.<br><br>
+      Heavier.<br><br>
+      Final.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 13 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch25_p13.png">
+    <div class="text">
+      They had not defeated him.<br><br>
+      They had only prepared him.
+    </div>
+  </div>
+
+  <div class="divider">TO BE CONTINUED</div>
+
+</div>
+
+<div class="nav">
+    <a href="chapter-24.html">⬅ Previous</a>
+    <a href="../index.html">🏠 Home</a>
+    <a href="chapter-26.html">Next ➡</a>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const panels = document.querySelectorAll('.panel');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            }
+        });
+    }, { threshold: 0.15 });
+
+    panels.forEach(panel => {
+        observer.observe(panel);
+    });
+
+});
+</script>
+
+</body>
+</html>
