@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Chapter 24 — The Fall of Nihilus</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="js-enabled">
+<div class="chapter">
+
+  <h1>CHAPTER 24</h1>
+  <h2>The Fall of Nihilus</h2>
+
+  <!-- PANEL 1 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch24_p01.png" alt="The Eight Above">
+    <div class="text">
+      They did not rush.<br><br>
+      They rose.<br><br>
+      For the first time—<br>
+      he stood beneath them.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 2 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch24_p02.png" alt="Divine Formation">
+    <div class="text">
+      Alignment completed.<br><br>
+      Not chaos.<br>
+      Not force.<br><br>
+      Structure imposed.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 3 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch24_p03.png" alt="Pressure Builds">
+    <div class="text">
+      Space tightened.<br><br>
+      The world narrowed.<br><br>
+      For the first time—<br>
+      resistance met him.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 4 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch24_p04.png" alt="Armor Fractures">
+    <div class="text">
+      It began.<br><br>
+      Not defeat.<br>
+      Not collapse.<br><br>
+      Fracture.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 5 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch24_p05.png" alt="First Impact">
+    <div class="text">
+      The strike landed.<br><br>
+      Clean.<br>
+      Precise.<br><br>
+      Unavoidable.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 6 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch24_p06.png" alt="World Shatters">
+    <div class="text">
+      The world broke.<br><br>
+      Not around him—<br>
+      through him.<br><br>
+      Reality split open.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 7 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch24_p07.png" alt="Nihilus Falls">
+    <div class="text">
+      He dropped.<br><br>
+      Not defeated.<br>
+      Not finished.<br><br>
+      Forced downward.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 8 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch24_p08.png" alt="Serious Expression">
+    <div class="text">
+      Silence replaced motion.<br><br>
+      No smile remained.<br><br>
+      Only focus.<br>
+      Only awareness.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 9 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch24_p09.png" alt="Final Binding">
+    <div class="text">
+      They bound him.<br><br>
+      Not with chains—<br>
+      but law.<br><br>
+      Absolute.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 10 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch24_p10.png" alt="Final Assault">
+    <div class="text">
+      Everything was released.<br><br>
+      No restraint remained.<br><br>
+      This was the end.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 11 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch24_p11.png" alt="Whiteout">
+    <div class="text">
+      Light consumed all.<br><br>
+      Form vanished.<br><br>
+      Only force remained.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 12 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch24_p12.png" alt="Aftermath">
+    <div class="text">
+      Silence returned.<br><br>
+      The storm faded.<br><br>
+      Only ruin remained.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 13 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch24_p13.png" alt="Nihilus Down">
+    <div class="text">
+      He did not rise.<br><br>
+      He did not move.<br><br>
+      They believed it was over.
+    </div>
+  </div>
+
+  <div class="divider">TO BE CONTINUED</div>
+
+</div>
+
+<div class="nav">
+    <a href="chapter-23.html">⬅ Previous</a>
+    <a href="../index.html">🏠 Home</a>
+    <a href="chapter-25.html">Next ➡</a>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const panels = document.querySelectorAll('.panel');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            }
+        });
+    }, { threshold: 0.15 });
+
+    panels.forEach(panel => {
+        observer.observe(panel);
+    });
+
+});
+</script>
+
+</body>
+</html>
