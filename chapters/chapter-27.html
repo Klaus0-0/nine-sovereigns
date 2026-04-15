@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Chapter 27 — The Cost of Existence</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="js-enabled">
+<div class="chapter">
+
+  <h1>CHAPTER 27</h1>
+  <h2>The Cost of Existence</h2>
+
+  <!-- PANEL 1 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch27_p01.png">
+    <div class="text">
+      No one moved.<br><br>
+      Not from fear.<br><br>
+      From understanding.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 2 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch27_p02.png">
+    <div class="text">
+      One stepped back.<br><br>
+      Not retreating.<br><br>
+      Reconsidering.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 3 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch27_p03.png">
+    <div class="text">
+      Formation broke.<br><br>
+      Unity fractured.<br><br>
+      Silence grew heavier.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 4 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch27_p04.png">
+    <div class="text">
+      They tried again.<br><br>
+      And nothing happened.<br><br>
+      Not even resistance.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 5 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch27_p05.png">
+    <div class="text">
+      Nihilus remained.<br><br>
+      Unaffected.<br><br>
+      Uninvolved.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 6 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch27_p06.png">
+    <div class="text">
+      They turned on each other.<br><br>
+      Not in anger.<br><br>
+      In doubt.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 7 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch27_p07.png">
+    <div class="text">
+      One fell.<br><br>
+      Not struck.<br><br>
+      Empty.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 8 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch27_p08.png">
+    <div class="text">
+      None moved to help.<br><br>
+      Not from cruelty.<br><br>
+      From truth.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 9 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch27_p09.png">
+    <div class="text">
+      He watched.<br><br>
+      The same as before.<br><br>
+      The same as always.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 10 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch27_p10.png">
+    <div class="text">
+      Then—<br><br>
+      something changed.<br><br>
+      Not in him.<br>
+      In them.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 11 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch27_p11.png">
+    <div class="text">
+      A new thought formed.<br><br>
+      Fragile.<br><br>
+      Dangerous.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 12 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch27_p12.png">
+    <div class="text">
+      This was not over.<br><br>
+      But it would never be the same.
+    </div>
+  </div>
+
+  <div class="divider">TO BE CONTINUED</div>
+
+</div>
+
+<div class="nav">
+    <a href="chapter-26.html">⬅ Previous</a>
+    <a href="../index.html">🏠 Home</a>
+    <a href="chapter-28.html">Next ➡</a>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const panels = document.querySelectorAll('.panel');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            }
+        });
+    }, { threshold: 0.15 });
+
+    panels.forEach(panel => {
+        observer.observe(panel);
+    });
+
+});
+</script>
+
+</body>
+</html>
