@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Chapter 29 — The Execution</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="js-enabled">
+<div class="chapter">
+
+  <h1>CHAPTER 29</h1>
+  <h2>The Execution</h2>
+
+  <!-- PANEL 1 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch29_p01.png">
+    <div class="text">
+      They moved.<br><br>
+      Not to strike.<br><br>
+      To construct.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 2 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch29_p02.png">
+    <div class="text">
+      Power flowed.<br><br>
+      Not wild.<br><br>
+      Directed.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 3 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch29_p03.png">
+    <div class="text">
+      Structure emerged.<br><br>
+      Not natural.<br><br>
+      Imposed.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 4 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch29_p04.png">
+    <div class="text">
+      He stood within it.<br><br>
+      Watching.<br><br>
+      Allowing.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 5 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch29_p05.png">
+    <div class="text">
+      The first seal locked.<br><br>
+      Not force—<br>
+      rule.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 6 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch29_p06.png">
+    <div class="text">
+      Pressure increased.<br><br>
+      Space resisted.<br><br>
+      Containment held.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 7 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch29_p07.png">
+    <div class="text">
+      They strained.<br><br>
+      Not from weakness.<br><br>
+      From scale.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 8 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch29_p08.png">
+    <div class="text">
+      He changed.<br><br>
+      Not outwardly.<br><br>
+      Fundamentally.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 9 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch29_p09.png">
+    <div class="text">
+      Another layer formed.<br><br>
+      Deeper.<br><br>
+      Stronger.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 10 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch29_p10.png">
+    <div class="text">
+      It began to break.<br><br>
+      Not from him.<br><br>
+      From them.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 11 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch29_p11.png">
+    <div class="text">
+      They held it together.<br><br>
+      Refusing collapse.<br><br>
+      Refusing failure.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 12 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch29_p12.png">
+    <div class="text">
+      It stabilized.<br><br>
+      For a moment—<br><br>
+      it worked.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 13 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch29_p13.png">
+    <div class="text">
+      Then—<br><br>
+      something cracked.
+    </div>
+  </div>
+
+  <div class="divider">TO BE CONTINUED</div>
+
+</div>
+
+<div class="nav">
+    <a href="chapter-28.html">⬅ Previous</a>
+    <a href="../index.html">🏠 Home</a>
+    <a href="chapter-30.html">Next ➡</a>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const panels = document.querySelectorAll('.panel');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            }
+        });
+    }, { threshold: 0.15 });
+
+    panels.forEach(panel => {
+        observer.observe(panel);
+    });
+
+});
+</script>
+
+</body>
+</html>
