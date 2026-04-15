@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Chapter 30 — The Break</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="js-enabled">
+<div class="chapter">
+
+  <h1>CHAPTER 30</h1>
+  <h2>The Break</h2>
+
+  <!-- PANEL 1 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch30_p01.png">
+    <div class="text">
+      It held.<br><br>
+      Perfectly.<br><br>
+      For a moment.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 2 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch30_p02.png">
+    <div class="text">
+      Then—<br><br>
+      something shifted.<br><br>
+      Not enough to see.<br>
+      Enough to matter.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 3 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch30_p03.png">
+    <div class="text">
+      He remained still.<br><br>
+      As if nothing had changed.<br><br>
+      As if everything had.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 4 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch30_p04.png">
+    <div class="text">
+      The first fracture formed.<br><br>
+      Small.<br><br>
+      Irreversible.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 5 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch30_p05.png">
+    <div class="text">
+      Alignment failed.<br><br>
+      Not entirely.<br><br>
+      Enough.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 6 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch30_p06.png">
+    <div class="text">
+      One noticed.<br><br>
+      Too late to prevent.<br><br>
+      Early enough to understand.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 7 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch30_p07.png">
+    <div class="text">
+      The structure shifted.<br><br>
+      Geometry betrayed itself.<br><br>
+      Perfection lost.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 8 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch30_p08.png">
+    <div class="text">
+      Fractures spread.<br><br>
+      Not violently.<br><br>
+      Inevitably.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 9 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch30_p09.png">
+    <div class="text">
+      He moved.<br><br>
+      Just once.<br><br>
+      And everything followed.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 10 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch30_p10.png">
+    <div class="text">
+      They felt it break.<br><br>
+      Not outside.<br><br>
+      Within.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 11 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch30_p11.png">
+    <div class="text">
+      The construct collapsed.<br><br>
+      Not destroyed.<br><br>
+      Unmade.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 12 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch30_p12.png">
+    <div class="text">
+      Silence returned.<br><br>
+      He stood free.<br><br>
+      As before.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 13 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch30_p13.png">
+    <div class="text">
+      Nothing had changed.<br><br>
+      Except them.
+    </div>
+  </div>
+
+  <div class="divider">TO BE CONTINUED</div>
+
+</div>
+
+<div class="nav">
+    <a href="chapter-29.html">⬅ Previous</a>
+    <a href="../index.html">🏠 Home</a>
+    <a href="chapter-31.html">Next ➡</a>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const panels = document.querySelectorAll('.panel');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            }
+        });
+    }, { threshold: 0.15 });
+
+    panels.forEach(panel => {
+        observer.observe(panel);
+    });
+
+});
+</script>
+
+</body>
+</html>
