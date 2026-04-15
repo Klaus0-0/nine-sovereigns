@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Chapter 28 — The Plan</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="js-enabled">
+<div class="chapter">
+
+  <h1>CHAPTER 28</h1>
+  <h2>The Plan</h2>
+
+  <!-- PANEL 1 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch28_p01.png">
+    <div class="text">
+      They gathered again.<br><br>
+      Not as one.<br><br>
+      But not apart.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 2 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch28_p02.png">
+    <div class="text">
+      One stepped forward.<br><br>
+      Not to lead.<br><br>
+      To propose.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 3 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch28_p03.png">
+    <div class="text">
+      An idea formed.<br><br>
+      Not of victory.<br><br>
+      Of survival.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 4 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch28_p04.png">
+    <div class="text">
+      They listened.<br><br>
+      Not convinced.<br><br>
+      But willing.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 5 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch28_p05.png">
+    <div class="text">
+      Not destruction.<br><br>
+      Not defeat.<br><br>
+      Containment.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 6 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch28_p06.png">
+    <div class="text">
+      The cost was clear.<br><br>
+      Too clear.<br><br>
+      Too great.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 7 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch28_p07.png">
+    <div class="text">
+      He remained.<br><br>
+      Watching.<br><br>
+      Waiting.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 8 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch28_p08.png">
+    <div class="text">
+      Decision settled.<br><br>
+      Not unanimous.<br><br>
+      But necessary.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 9 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch28_p09.png">
+    <div class="text">
+      Power returned.<br><br>
+      Different.<br><br>
+      Controlled.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 10 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch28_p10.png">
+    <div class="text">
+      Formation changed.<br><br>
+      Not balance.<br><br>
+      Strategy.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 11 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch28_p11.png">
+    <div class="text">
+      Silence returned.<br><br>
+      Not empty.<br><br>
+      Focused.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PANEL 12 -->
+  <div class="panel">
+    <img src="../images/arc-3/ch28_p12.png">
+    <div class="text">
+      They faced him again.<br><br>
+      Not to win.<br><br>
+      To endure.
+    </div>
+  </div>
+
+  <div class="divider">TO BE CONTINUED</div>
+
+</div>
+
+<div class="nav">
+    <a href="chapter-27.html">⬅ Previous</a>
+    <a href="../index.html">🏠 Home</a>
+    <a href="chapter-29.html">Next ➡</a>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const panels = document.querySelectorAll('.panel');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            }
+        });
+    }, { threshold: 0.15 });
+
+    panels.forEach(panel => {
+        observer.observe(panel);
+    });
+
+});
+</script>
+
+</body>
+</html>
